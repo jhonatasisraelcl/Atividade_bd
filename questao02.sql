@@ -13,15 +13,16 @@ insert into t1 (b) values (8);
  
 select * from t1;
 */
-CREATE SEQUENCE S1;
-
-CREATE TABLE T1 ( 
-  A integer DEFAULT NEXTVAL('s1'), 
-	B int, 
-	PRIMARY KEY (A)
+CREATE SEQUENCE s1;
+CREATE TABLE t1 (
+   a INT default (NEXT VALUE for s1),
+   b INT,
+   PRIMARY KEY (a)
 );
-
-INSERT INTO T1(B) VALUES (5), (7);
-INSERT INTO T1 (B) VALUES (8);
-
-SELECT * FROM T1;
+INSERT INTO t1 (b) VALUES (5), (7);
+INSERT INTO t1 (b) VALUES (8);
+SELECT * FROM t1;
+ 
+-- saida "1" para (a) e "5" para (b)
+-- saida "2" para (a) e "7" para (b)
+-- saida "3" para (a) e "8" para (b)
