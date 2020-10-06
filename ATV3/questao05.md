@@ -32,8 +32,11 @@
 > Se liga que o FULL OUTER JOIN pode potencialmente retornar conjuntos de resultados muito grandes!
 
 
-
-
-
 #### REFERENCES
 https://pt.stackoverflow.com/questions/146662/contru%C3%A7%C3%A3o-de-tabelas-sql-usar-ou-n%C3%A3o-campos-com-not-null
+
+https://pt.stackoverflow.com/questions/308038/full-outer-join-gera-erros
+
+https://www.devmedia.com.br/inner-cross-left-rigth-e-full-joins/21016
+
+http://www.bosontreinamentos.com.br/mysql/mysql-left-e-right-join-consultar-dados-em-duas-ou-mais-tabelas-30/#:~:text=categoria%20do%20post%5D-,MySQL%20%E2%80%93%20LEFT%20e%20RIGHT%20JOIN%20%E2%80%93%20Consultar%20dados,em%20duas%20ou%20mais%20tabelas&text=LEFT%20JOIN%3A%20Retorna%20todas%20as,correspond%C3%AAncia%20na%20tabela%20%C3%A0%20esquerda.
