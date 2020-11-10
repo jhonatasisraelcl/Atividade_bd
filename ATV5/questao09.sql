@@ -1,0 +1,1 @@
+/*Liste o nome e o departamento de todos os funcionários que ganham mais do que algum gerente.*/
