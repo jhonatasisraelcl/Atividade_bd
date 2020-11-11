@@ -1,0 +1,1 @@
+/*Crie uma função que recebe o código de um voo e retorna o número de passageiros desse voo.*/

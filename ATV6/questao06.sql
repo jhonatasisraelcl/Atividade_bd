@@ -1,0 +1,1 @@
+/*Crie uma procedure que recebe um valor qualquer e retorna esse valor ao quadrado.*/
