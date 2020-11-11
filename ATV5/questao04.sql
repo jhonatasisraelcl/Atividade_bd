@@ -1,6 +1,6 @@
 /*Faça uma função para calcular quantos dias de atraso tem uma atividade. 
 A função retornará negativo se tiver atrasada e positivo se tiver em dia.*/
-CREATE OR REPLACE FUNCTION atrasou(codAtividade INTEGER) 
+CREATE OR REPLACE FUNCTION atrasouAtividade(codAtividade INTEGER) 
 RETURNS INTERVAL 
 LANGUAGE 'plpgsql'
 AS $$
@@ -18,4 +18,4 @@ BEGIN
 END;
 $$;
 
-SELECT atrasou('1');
+SELECT atrasouAtividade('1');
