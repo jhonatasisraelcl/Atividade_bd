@@ -1,8 +1,10 @@
 /*Faça uma função para calcular quantos dias de atraso tem um projeto. 
 A função retornará negativo se tiver atrasada e positivo se tiver em dia.
 */
-CREATE OR REPLACE FUNCTION questao_5(codProjeto INTEGER) 
-RETURNS INTERVAL AS $$
+CREATE OR REPLACE FUNCTION atrasouProjeto(codProjeto INTEGER) 
+RETURNS INTERVAL 
+LANGUAGE 'plpgsql'
+AS $$
 DECLARE
 	fim DATE;
 	dataHoje TIMESTAMP;
@@ -13,6 +15,6 @@ BEGIN
 	diasAtraso = fim - dataHoje;
 	RETURN diasAtraso;
 END;
-$$ LANGUAGE 'plpgsql';
+$$;
 
-SELECT questao_5('1');
+SELECT atrasouProjeto('1');
