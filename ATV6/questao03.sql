@@ -1,5 +1,5 @@
 /*Crie uma função que  retorna o número de voos que certo cliente já realizou.*/
-CREATE OR REPLACE FUNCTION questao_3(codCliente CHAR(9)) 
+CREATE OR REPLACE FUNCTION javoei(codCliente CHAR(9)) 
 RETURNS INTEGER 
 LANGUAGE 'plpgsql'
 AS $$
@@ -13,4 +13,4 @@ BEGIN
 END;
 $$;
 
-SELECT questao_3('1');
+SELECT javoei('1');
